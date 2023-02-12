@@ -19,7 +19,7 @@ namespace personal_utilities
 	// This function compares two floating point numbers. Given their imprecise nature the function use "epsilon" to understand
 	// if they are “close enough”. If they are then they are considered to be equal.
 
-	bool approxEqualAbsRel(double x, double y, double absEpsilon = 1e-12, double relEpsilon = 1e-8)
+	bool approxEqualAbsRel(double x, double y, double absEpsilon, double relEpsilon)
 	{
 		// (1) Check if floats are close in absolute value: Necessary when comparing numbers near zero
 		double diff{ std::abs(x - y) };
