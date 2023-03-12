@@ -13,6 +13,9 @@ namespace personal_utilities
 
 	// Two to the Power Bitwise Operation
 	std::uint64_t power_two_bitwise(std::uint64_t exponent);
+
+	// Standard Normal CDF
+	double normalCdf(double x);
 }
 
 #endif // !UTILITIES_H
